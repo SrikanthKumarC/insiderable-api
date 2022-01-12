@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true
+    },
+    "Salary": {
+      "type": "integer",
+      "required": true
+    },
+    "Last_date": {
+      "type": "date"
+    },
+    "Slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "AgeLimit": {
+      "type": "integer",
+      "max": 60,
+      "required": false,
+      "min": 10
+    },
+    "Eligibility": {
+      "type": "string"
+    },
+    "Contents": {
+      "type": "richtext"
+    },
+    "Vacancies": {
+      "type": "integer"
+    },
+    "ApplyLink": {
+      "type": "string"
+    }
+  }
+}
